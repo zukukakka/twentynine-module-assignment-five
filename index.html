@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bus Ticket</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="mx-24 rounded-xl">
+        <div class="navbar bg-base-100">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+                </svg>
+              </div>
+              <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                <li><a>Home</a></li>
+                <li><a>About</a></li>
+                <li><a>Destination</a></li>
+                <li><a>Search</a></li>
+              </ul>
+            </div>
+            <a class="btn btn-ghost text-xl">SMLine</a>
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+              <li><a>Home</a></li>
+              <li><a>About</a></li>
+              <li><a>Destination</a></li>
+              <li><a>Search</a></li>
+            </ul>
+          </div>
+          <div class="navbar-end">
+            <a class="btn bg-green-500 text-white"
+              >Bus
+              <i class="fa-solid fa-bus"></i>
+            </a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Section Hero -->
+      <section class="mx-24 rounded-xl">
+        <div class="hero min-h-screen" style="background-image: url(images/banner.png); border-radius: 10px">
+          <div class="hero-overlay bg-opacity-60 rounded-xl"></div>
+          <div class="hero-content text-center text-neutral-content">
+            <div class="max-w-md">
+              <h1 class="mb-5 text-5xl font-bold"
+                >Travel With SMLine<br />
+                <span class="text-5xl font-bold text-green-600">Your Poribahan</span>
+              </h1>
+              <p class="mb-5">
+                This travel paribahan with you always. We provide you best support with you and you can safe journey
+                with you. So don't worry about to your travel</p
+              >
+              <a href="#buy-ticket" class="btn btn-primary bg-green-600 border-0 text-lg">Buy Tickets</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Coupon Section -->
+      <section class="mx-24 rounded-xl mt-14">
+        <h2 class="text-4xl font-bold text-center mb-7">Journey with you special offer</h2>
+        <div class="flex w-full gap-7">
+          <div class="flex p-10 bg-yellow-500 rounded-md gap-5 m-auto justify-between">
+            <div>
+              <h1 class="text-5xl font-bold">15% Off</h1>
+              <p class="text-2xl font-bold">On Next Purchase</p>
+              <p class="text-xl font-bold text-gray-500">Use by February 2024</p>
+            </div>
+            <div class="divider divider-horizontal divider-neutral"></div>
+            <div>
+              <h2 class="text-5xl font-bold">NEW15</h2>
+              <p class="text-gray-600 text-md font-semibold">Coupon Code</p>
+            </div>
+          </div>
+          <div class="flex p-10 bg-pink-400 rounded-md gap-5 m-auto justify-between">
+            <div>
+              <h1 class="text-5xl font-bold">20% Off</h1>
+              <p class="text-2xl font-bold">For Couple Offer</p>
+              <p class="text-xl font-bold text-gray-500">Use by February 2024</p>
+            </div>
+            <div class="divider divider-horizontal divider-neutral"></div>
+            <div>
+              <h2 class="text-5xl font-bold">Couple 20</h2>
+              <p class="text-gray-600 text-md font-semibold">Coupon Code</p>
+            </div>
+          </div>
+        </div>
+        <div class="text-center">
+          <button class="btn bg-green-500 mt-9 text-white text-lg">See All Prices</button>
+        </div>
+      </section>
+
+      <!-- Seat Plan Section -->
+      <section id="buy-ticket" class="mx-24 rounded-xl">
+        <div class="p-10 w-full gap-7">
+          <div class="flex p-10 bg-base-200 rounded-md gap-5 m-auto justify-between">
+            <div>
+              <div class="grid grid-cols-2 place-items-center">
+                <div class="flex gap-5">
+                  <div><i class="fa-solid fa-van-shuttle text-7xl"></i></div>
+                  <div>
+                    <h2 class="text-4xl font-bold">SMline Paribahan</h2>
+                    <p class="text-lg font-bold text-gray-500">Coach-009-web ! AC_Business</p>
+                  </div>
+                </div>
+
+                <div class="p-5 bg-green-500 rounded-md">
+                  <span id="left-seats" class="text-2xl text-white"
+                    ><i class="fa-solid fa-bus-simple"></i> 08 Seat Lefts</span
+                  >
+                </div>
+              </div>
+              <div class="p-5">
+                <div class="p-10 flex flex-col w-full card bg-base-300 rounded-box">
+                  <div class="h-20 flex place-content-between">
+                    <div class="font-bold text-gray-500">Route</div>
+                    <span class="font-bold text-gray-700">Dhaka-Sylhet</span>
+                  </div>
+                  <div class="divider"></div>
+                  <div class="h-20 flex place-content-between">
+                    <div class="font-bold text-gray-500">Departure Time</div>
+                    <span class="font-bold text-gray-700">9:00 PM</span>
+                  </div>
+                  <div class="divider"></div>
+
+                  <div class="grid grid-cols-3 card bg-base-300 rounded-box place-items-center gap-5">
+                    <div class="bg-base-100 p-8 rounded-xl">
+                      <span class="font-bold text-gray-500">Boarding Point - Laxmipur</span>
+                    </div>
+                    <div class="bg-base-100 p-8 rounded-xl">
+                      <span class="font-bold text-gray-500">Dropping Point - Bogura</span>
+                    </div>
+                    <div class="bg-base-100 p-8 rounded-xl">
+                      <span class="font-bold text-gray-500">Est. Time - 11 Hour</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="divider divider-horizontal divider-neutral"></div>
+            <div class="grid place-items-center">
+              <div class="text-center space-y-5">
+                <i
+                  class="fa-solid fa-bangladeshi-taka-sign bg-green-500 text-white text-4xl p-4 font-bold rounded-lg"
+                ></i>
+                <h2 class="text-4xl font-bold">550 Taka</h2>
+                <p class="text-3xl text-gray-500 font-bold">Per Seat</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="p-10 w-full gap-7">
+          <div class="flex p-10 bg-base-200 rounded-md gap-5 m-auto">
+            <div>
+              <h1 class="text-2xl font-semibold">Select Your seat</h1>
+              <div class="divider"></div>
+              <div class="flex place-content-between">
+                <div class="flex gap-3">
+                  <img src="images/seat-gray.png" alt="" />
+                  <span class="font-bold"> Available</span>
+                </div>
+
+                <div class="flex gap-3">
+                  <img src="images/seat-green-filled.png" alt="" />
+                  <h5 class="text-green-600 font-bold">Selected</h5>
+                </div>
+              </div>
+              <div class="divider"></div>
+              <div>
+                <div class="text-end">
+                  <i class="fa-solid fa-dharmachakra bg-base-300 p-5 rounded-md w-20 text-4xl"></i>
+                </div>
+                <div class="flex gap-14 place-items-center mt-5">
+                  <span class="text-4xl">A</span>
+                  <div class="seat bg-base-300 p-5 rounded-md w-20 text-4xl">A1</div>
+                  <div class="seat bg-base-300 p-5 rounded-md w-20 text-4xl">A2</div>
+                  <div class="seat bg-base-300 p-5 rounded-md w-20 text-4xl">A3</div>
+                  <div class="seat bg-base-300 p-5 rounded-md w-20 text-4xl">A4</div>
+                </div>
+
+                <div class="flex gap-14 place-items-center mt-5">
+                  <span class="text-4xl">B</span>
+                  <div class="seat bg-base-300 p-5 rounded-md w-20 text-4xl">B1</div>
+                  <div class="seat bg-base-300 p-5 rounded-md w-20 text-4xl">B2</div>
+                  <div class="seat bg-base-300 p-5 rounded-md w-20 text-4xl">B3</div>
+                  <div class="seat bg-base-300 p-5 rounded-md w-20 text-4xl">B4</div>
+                </div>
+              </div>
+            </div>
+            <div class="divider divider-horizontal"></div>
+            <div class="w-full">
+              <h1 class="text-2xl font-semibold">Seat Plan</h1>
+              <div class="divider"></div>
+              <div class="bg-base-300 p-3 rounded-md">
+                <div class="grid grid-cols-3">
+                  <div class="text-2xl text-black"
+                    >Seat <span id="seat-count" class="bg-green-600 rounded-lg text-white p-2">0</span></div
+                  >
+                  <div class="text-2xl text-black">Class</div>
+                  <div class="text-2xl text-black">Price</div>
+                </div>
+                <div class="divider"></div>
+                <div id="seat-list" class="grid grid-cols-3"> </div>
+
+                <div class="divider"></div>
+                <div class="grid grid-cols-3">
+                  <div class="text-2xl text-black col-span-2">Total Price</div>
+                  <div class="text-2xl text-black" id="total-price">0</div>
+                </div>
+
+                <div class="grid grid-flow-col relative my-3" id="coupon">
+                  <input
+                    class="p-5 w-full bg-base-200 rounded-lg h-12"
+                    id="input-coupon"
+                    type="text"
+                    placeholder="Have any coupon"
+                    disabled
+                  />
+                  <button
+                    class="btn w-[100px] btn-primary bg-green-600 border-0 h-5 absolute top-1/2 transform -translate-y-1/2 right-2"
+                    id="coupon-btn"
+                    disabled
+                    >Apply</button
+                  >
+                </div>
+
+                <div class="grid grid-cols-3">
+                  <div class="text-2xl text-black col-span-2">Grand Total</div>
+                  <div class="text-2xl text-black" id="grand-total">0</div>
+                </div>
+
+                <div class="grid grid-cols-1 mt-3">
+                  <button
+                    onclick="nextModal.showModal()"
+                    id="next"
+                    class="btn w-full btn-primary bg-green-600 border-0 h-5"
+                    disabled
+                    >Next</button
+                  >
+                  <dialog id="nextModal" class="modal modal-bottom sm:modal-middle text-center">
+                    <div class="modal-box">
+                      <div class="flex place-content-center my-2">
+                        <img src="images/success.png" alt="" />
+                      </div>
+
+                      <h3 class="font-bold text-2xl">SUCCESS</h3>
+                      <p class="py-4 font-bold"
+                        >Thank you for booking our bus seats. <br />
+                        We are working hard to find the best service and deals for you.</p
+                      >
+                      <p class="py-4">Shortly You will Find a Confirmation in your email.</p>
+                      <button class="btn btn-success text-white">Continue</button>
+                    </div>
+                  </dialog>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer Section End -->
+    <footer class="footer p-10 bg-base-200 text-base-content">
+      <aside>
+        <a class="btn btn-ghost text-2xl">SMLine</a>
+        <p>Best Paribahan Limited<br />Providing reliable tech since 2020</p>
+      </aside>
+      <nav>
+        <h6 class="footer-title">Services</h6>
+        <a class="link link-hover">Branding</a>
+        <a class="link link-hover">Design</a>
+        <a class="link link-hover">Marketing</a>
+        <a class="link link-hover">Advertisement</a>
+      </nav>
+      <nav>
+        <h6 class="footer-title">Company</h6>
+        <a class="link link-hover">About us</a>
+        <a class="link link-hover">Contact</a>
+        <a class="link link-hover">Jobs</a>
+        <a class="link link-hover">Press kit</a>
+      </nav>
+      <nav>
+        <h6 class="footer-title">Legal</h6>
+        <a class="link link-hover">Terms of use</a>
+        <a class="link link-hover">Privacy policy</a>
+        <a class="link link-hover">Cookie policy</a>
+      </nav>
+    </footer>
+
+    <script src="scripts/design.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"></script>
+  </body>
+</html>
